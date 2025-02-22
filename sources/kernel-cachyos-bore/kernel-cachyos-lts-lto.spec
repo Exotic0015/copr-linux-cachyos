@@ -25,7 +25,7 @@
 
 # Build a minimal a kernel via modprobed.db
 # file to reduce build times
-%define _build_minimal 0
+%define _build_minimal 1
 
 # Builds the kernel with clang and enables
 # ThinLTO
@@ -38,7 +38,7 @@
     %define _build_nv 0
     %define _nv_ver 570.86.16
 %else
-    %define _build_nv 1
+    %define _build_nv 0
     %define _nv_ver 565.77
     %define _nv_old 1
 %endif
